@@ -1,0 +1,12 @@
+node_modules
+frontend/dist
+backend/node_modules
+frontend/node_modules
+.openclaw/
+AGENTS.md
+BOOTSTRAP.md
+HEARTBEAT.md
+IDENTITY.md
+SOUL.md
+TOOLS.md
+USER.md

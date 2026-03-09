@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  backend:
+    build: ./backend
+    container_name: stock-backend
+    env_file:
+      - ./backend/.env
+    ports:
+      - "4100:4000"
+    environment:
+      - NODE_ENV=production
+  frontend:
+    build: ./frontend
+    container_name: stock-frontend
+    ports:
+      - "4173:80"
+    depends_on:
+      - backend
